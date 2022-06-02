@@ -1,0 +1,353 @@
+@import "Ruls";
+
+:root {
+  --main-color:  #B5E0D7;
+  --main-font-color: #505050;
+  --main-font: 'Calibri';
+}
+
+h1{
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.571rem;
+  line-height: 2.929rem;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+
+  span{
+    color: var(--main-color);
+  }
+
+}
+
+.template{
+
+  &_page{
+    position: relative;
+  }
+
+
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 24px 16px 22px;
+
+  &__position{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.143rem;
+    line-height: 1.286rem;
+    letter-spacing: 0.275em;
+    font-variant: small-caps;
+
+    color:var(--main-color);
+  }
+
+  &__text{
+    background: var(--main-font-color);
+    width: -webkit-fill-available;
+    padding: 31px 0px 30px  24px;
+  }
+  &__image{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin-left: 9px;
+  }
+
+}
+
+.content {
+
+  &_main{
+    display: flex;
+    flex-direction: row;
+  }
+  &__col{
+    width: 50%;
+    padding: 24px 24px;
+  }
+
+  &__wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 21px;
+  }
+
+  &__header{
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.214rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--main-font-color);
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    border-bottom:  1px solid var(--main-font-color);
+  }
+
+  &__text{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height: 1.143rem;
+    color: var(--main-font-color);
+  }
+
+  &__section{
+    margin-bottom: 12px;
+  }
+
+  &__link{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 4px;
+
+    &-wrap{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__icon{
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+
+      svg{
+        width: 24px;
+        height: 24px;
+        path{
+          fill: var(--main-font-color);
+        }
+      }
+    }
+
+    &__text{
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__header{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.929rem;
+      line-height: 1.071rem;
+      letter-spacing: -0.01em;
+      color: var(--main-font-color)
+    }
+
+    a{
+      text-decoration: none;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.857rem;
+      line-height: 1rem;
+      letter-spacing: -0.01em;
+      color: var(--main-font-color);
+
+
+    }
+    &__simple-text{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.857rem;
+      line-height: 1rem;
+      letter-spacing: -0.01em;
+      color: var(--main-font-color);
+
+    }
+  }
+
+}
+
+.lang{
+
+  &__list{
+    list-style: none;
+
+    li{
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+
+  &__name{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.929rem;
+    line-height:1.143rem;
+    color: var(--main-font-color)
+  }
+  &__level{
+    font-family: var(--main-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height:1.143rem;
+    color: var(--main-font-color)
+  }
+  &__separator{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height:1.143rem;
+    color: var(--main-font-color);
+    margin-left: 3px;
+    margin-right: 3px;
+
+  }
+}
+
+.skill{
+
+  &__wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:8px;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  &__name{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.929rem;
+    line-height: 1.143rem;
+    color: var(--main-font-color)
+  }
+  &__duration{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height: 1.143rem;
+    color: var(--main-font-color);
+    &_year{
+      margin-right: 3px;
+    }
+  }
+  &__separator{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height: 1.143rem;
+    color: var(--main-font-color);
+    margin-left: 3px;
+    margin-right: 3px;
+
+  }
+
+
+}
+
+.experience{
+
+  &__wrap{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+
+    &__label{
+      display: flex;
+    }
+
+    &__position{
+
+      font-family: var(--main-font);
+      font-style: normal;
+      font-weight: 700;
+      font-size:0.929rem;
+      line-height: 1.143rem;
+      color: var(--main-font-color);
+    }
+
+    &__company-name{
+      font-family: var(--main-font);
+      font-style: normal;
+      font-weight: 400;
+      font-size:0.929rem;
+      line-height: 1.143rem;
+      color: var(--main-font-color);
+      margin-left: 8px;
+    }
+
+    &__text{
+      font-family: var(--main-font);
+      font-style: normal;
+      font-weight: 400;
+      font-size:0.929rem;
+      line-height: 1.143rem;
+      color: var(--main-font-color);
+
+    }
+
+    &__duration{
+      display: flex;
+      flex-direction: row;
+      font-family: var(--main-font);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.929rem;
+      line-height: 1.143rem;
+      color: #967575;
+
+    }
+    &__date{
+      display: flex;
+
+      &_mount{
+        margin-right: 3px;
+      }
+
+    }
+
+    &__separator{
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+
+    &__location{
+      font-family: var(--main-font);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.929rem;
+      line-height: 1.143rem;
+     color: var(--main-font-color);
+    }
+
+  }
+}

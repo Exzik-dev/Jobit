@@ -7,7 +7,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 
-let htmlPageNames =[]
+let htmlPageNames = [];
+const pages = fs.readdirSync('./src/template/')
+pages.forEach(page => {
+    if (page.endsWith('.html')) {
+        htmlPageNames.push(page.split('.html')[0])
+    }
+})
+
+
 let multipleHtmlPlugins = htmlPageNames.map(name => {
     return new HTMLWebpackPlugin({
         template: `./src/template/${name}.html`, // relative path to the HTML files
@@ -16,6 +24,8 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
         chunks: [`main`] // respective JS files
     })
 })
+
+
 
 module.exports={
     mode:'development',

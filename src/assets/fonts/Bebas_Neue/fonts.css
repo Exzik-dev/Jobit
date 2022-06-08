@@ -1,0 +1,8 @@
+/* Fonts */
+@font-face {
+	font-family: 'BebasNeue';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('BebasNeue-Regular.ttf') format('truetype');
+}

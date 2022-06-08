@@ -3,7 +3,7 @@ const fs = require('fs');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 
 
 let htmlPageNames = [];
@@ -52,10 +52,7 @@ module.exports={
 
         }),
 
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
 
-        }),
 
         new CleanWebpackPlugin(),
 
@@ -64,26 +61,21 @@ module.exports={
 
     module: {
         rules: [{
-            test: /\.scss$/, // or /\.css$/i if you aren't using sass
-            use: [{
-                loader: 'style-loader',
-                options: {
-                    insert: 'head', // insert style tag inside of <head>
-                    injectType: 'singletonStyleTag',
-                    attributes: { id: "id" },
-
+            test: /\.scss$/,
+            exclude: /node_modules/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: { outputPath: 'css/', name: '[name].css'}
                 },
-
-            },
-                "css-loader",
-                "sass-loader"
-            ],
-
+                'sass-loader'
+            ]
         },
 
             {
                 test: /\.(png|jpe?g|gif)$/i,
                 loader: 'file-loader',
+                exclude: /node_modules/,
                 options: {
                     name: '[path][name].[ext]',
                 },

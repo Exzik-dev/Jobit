@@ -1,0 +1,60 @@
+@import "Rules";
+
+:root {
+  --main-color: #082239;
+  --main-font-color: #464950;
+  --main-font: 'Roboto';
+}
+
+h1{
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.429rem;
+  line-height: 1.643rem;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+
+}
+
+
+.template{
+
+
+  &_page{
+    position: relative;
+  }
+
+  &__decoration{
+    position: absolute;
+    z-index: 1;
+
+    &_column{
+      height: 100%;
+      width: 42%;
+      background: var(--main-color);
+    }
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  &__col{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    &_left{
+      width: 42%
+    }
+    &_right{
+      width:58%;
+    }
+  }
+
+}

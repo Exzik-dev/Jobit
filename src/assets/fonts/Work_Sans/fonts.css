@@ -1,0 +1,43 @@
+/* Fonts */
+@font-face {
+	font-family: 'WorkSans';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url('WorkSans-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'WorkSans';
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	src: url('WorkSans-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'WorkSans';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('WorkSans-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'WorkSans';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('WorkSans-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'WorkSans';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url('WorkSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'WorkSans';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: url('WorkSans-Bold.ttf') format('truetype');
+}

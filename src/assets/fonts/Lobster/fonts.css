@@ -1,0 +1,8 @@
+/* Fonts */
+@font-face {
+	font-family: 'Lobster';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('Lobster-Regular.ttf') format('truetype');
+}

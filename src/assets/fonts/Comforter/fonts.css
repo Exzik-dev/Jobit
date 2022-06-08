@@ -1,0 +1,8 @@
+/* Fonts */
+@font-face {
+	font-family: 'Comforter';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('Comforter-Regular.ttf') format('truetype');
+}
